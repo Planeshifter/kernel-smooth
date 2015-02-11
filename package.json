@@ -1,5 +1,5 @@
 {
-  "name": "kernelSmoother",
+  "name": "kernel",
   "version": "0.1.0",
   "description": "nonparametric kernel smoothing",
   "main": "lib/kernel.js",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Planeshifter/kernelSmoother.js",
   "dependencies": {
+    "gaussian": "^1.0.0",
     "lodash": "^3.1.0"
   },
   "devDependencies": {
