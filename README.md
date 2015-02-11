@@ -1,5 +1,5 @@
-[![NPM version](https://badge.fury.io/js/kernel.svg)](http://badge.fury.io/js/kernel)
-[![Build Status](https://travis-ci.org/Planeshifter/kernel.js.svg)](https://travis-ci.org/Planeshifter/kernel.js)
+[![NPM version](https://badge.fury.io/js/kernelSmooth.svg)](http://badge.fury.io/js/kernelSmooth)
+[![Build Status](https://travis-ci.org/Planeshifter/kernelSmooth.svg)](https://travis-ci.org/Planeshifter/kernelSmooth)
 
 # kernel.js
 nonparametric kernel smoothing for JavaScript
@@ -8,12 +8,12 @@ nonparametric kernel smoothing for JavaScript
 
 Via npm:
 ```
-npm install kernel
+npm install kernelSmooth
 ```
 
 Require as follows:
 ```
-var kernel = require('kernel');
+var kernel = require('kernelSmooth');
 ```
 
 ## API
