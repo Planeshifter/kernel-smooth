@@ -8,12 +8,12 @@ nonparametric kernel smoothing for JavaScript
 
 Via npm:
 ```
-npm install kernelSmooth
+npm install kernel-smooth
 ```
 
 Require as follows:
 ```
-var kernel = require('kernelSmooth');
+var kernel = require('kernel-smooth');
 ```
 
 ## API
@@ -39,6 +39,10 @@ vector supplied as an argument for `x`. In this case, predictions are generated
 for each element of the vector and the vector of predictions
 is returned. 
 
+### .mutipleRegression(Xs, ys, kernel, [bandwidth])
+
+Similar to .regression(), except that Xs should be a 2d array containing multiple predictors. Each element of `Xs` should has to be an array of length `p`, with `p` denoting the number of predictors. The returned estimator generates a prediction for a new data point x = (x_1, ..., x_p). If a 2d array is supplied instead, predictions are generated for multiple data points at once, where each row (= element of the outer array) is assumed to be a datum x = (x_1, ..., x_p).
+
 ### Choice of Kernel function
 
 For the `kernel` parameter in above functions, you should supply a univariate function `K(x)` which satisfies K(x) >= 0, integrates to one, has zero mean and unit variance. 
@@ -61,3 +65,6 @@ Epanechnikov kernel. Equal to zero if |x| > 1. Otherwise defined as
 #### .tricube(x)
 Tricube kernel function. Equal to zero if |x| > 1 and otherwise equal to
 (70/81) * (1-|x|^3)^3.
+
+### .silverman(x)
+For input vector x, calculate the optimal bandwidthe using Silverman's rule of thumb. This utility function can be used to calculate an appropriate bandwidth for the case in which a Gaussian kernel is used and one has reason to believe that the data points x_i are drawn from a normal distribution.
