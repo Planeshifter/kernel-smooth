@@ -1,5 +1,5 @@
-[![NPM version](https://badge.fury.io/js/kernelSmooth.svg)](http://badge.fury.io/js/kernelSmooth)
-[![Build Status](https://travis-ci.org/Planeshifter/kernelSmooth.svg)](https://travis-ci.org/Planeshifter/kernelSmooth)
+[![NPM version](https://badge.fury.io/js/kernel-smooth.svg)](http://badge.fury.io/js/kernel-smooth)
+[![Build Status](https://travis-ci.org/Planeshifter/kernel-smooth.svg)](https://travis-ci.org/Planeshifter/kernel-smooth)
 
 # kernelSmooth
 nonparametric kernel smoothing for JavaScript
