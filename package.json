@@ -1,0 +1,32 @@
+{
+  "name": "kernelSmoother",
+  "version": "0.1.0",
+  "description": "nonparametric kernel smoothing",
+  "main": "lib/kernel.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Planeshifter/kernelSmoother.js.git"
+  },
+  "keywords": [
+    "statistics",
+    "nonparametrics",
+    "kernel",
+    "smoothing"
+  ],
+  "author": "Philipp Burckhardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Planeshifter/kernelSmoother.js/issues"
+  },
+  "homepage": "https://github.com/Planeshifter/kernelSmoother.js",
+  "dependencies": {
+    "lodash": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
