@@ -1,7 +1,7 @@
 [![NPM version](https://badge.fury.io/js/kernelSmooth.svg)](http://badge.fury.io/js/kernelSmooth)
 [![Build Status](https://travis-ci.org/Planeshifter/kernelSmooth.svg)](https://travis-ci.org/Planeshifter/kernelSmooth)
 
-# kernel.js
+# kernelSmooth
 nonparametric kernel smoothing for JavaScript
 
 ## Installation
