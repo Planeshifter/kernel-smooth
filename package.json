@@ -1,5 +1,5 @@
 {
-  "name": "kernel",
+  "name": "kernelSmooth",
   "version": "0.1.0",
   "description": "nonparametric kernel smoothing",
   "main": "lib/kernel.js",
