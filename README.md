@@ -26,7 +26,7 @@ estimator: a function of one variable, `x`, which when invoked returns the
 kernel density estimate for `x`. The returned function can also be called with a
 vector supplied as an argument for `x`. In this case, the density is evaluated
 is for each element of the vector and the vector of density estimates
-is returned. See the functions in the exported `.fun` object for a list of possible kernels.
+is returned. 
 
 ### .regression(xs, ys, kernel, [bandwidth])
 
@@ -37,12 +37,12 @@ a function of one variable, `x`, which when invoked returns the
 estimate for `y`. The returned function can also be called with a
 vector supplied as an argument for `x`. In this case, predictions are generated
 for each element of the vector and the vector of predictions
-is returned. See the functions in the exported `.fun` object for a list of possible kernels.
+is returned. 
 
-### .multipleRegression(Xs, ys, kernel, [bandwidth])
+### Choice of Kernel function
 
-Similar to .regression(), expect that Xs can be a 2d array and thus contain multiple predictors. Each element of `Xs` should be an array of length `p`, with `p` denoting the number of predictors. The returned estimator generates a prediction for a new data point x = (x_1, ..., x_p) by first evaluating the Euclidean distance between x and the data 
-
+For the `kernel` parameter in above functions, you should supply a univariate function `K(x)` which satisfies K(x) >= 0, integrates to one, has zero mean and unit variance. 
+See the functions in the exported `.fun` object for a list of already implemented kernel functions.
 
 ### .fun
 This object of the module holds the following kernel functions to be used for
