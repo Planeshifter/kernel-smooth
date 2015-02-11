@@ -1,5 +1,8 @@
-# kernelSmoother.js
-nonparametric kernel smoothing
+[![NPM version](https://badge.fury.io/js/kernel.svg)](http://badge.fury.io/js/kernel)
+[![Build Status](https://travis-ci.org/Planeshifter/kernel.js.svg)](https://travis-ci.org/Planeshifter/kernel.js)
+
+# kernel.js
+nonparametric kernel smoothing for JavaScript
 
 ## Installation
 
@@ -29,7 +32,7 @@ is returned.
 
 Given input predictors `xs` and observed responses `ys`, a kernel function
 and a bandwidth (if not supplied, a default value of 0.5 is used),
-this function returns the Nadaraya & Watson kernel  regression estimator:
+this function returns the Nadaraya & Watson kernel regression estimator:
 a function of one variable, `x`, which when invoked returns the
 estimate for `y`. The returned function can also be called with a
 vector supplied as an argument for `x`. In this case, predictions are generated
