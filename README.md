@@ -1,8 +1,8 @@
-[![NPM version](https://badge.fury.io/js/kernel-smooth.svg)](http://badge.fury.io/js/kernel-smooth)
-[![Build Status](https://travis-ci.org/Planeshifter/kernel-smooth.svg)](https://travis-ci.org/Planeshifter/kernel-smooth)
+#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 # kernelSmooth
-nonparametric kernel smoothing for JavaScript
+
+> nonparametric kernel smoothing for JavaScript
 
 ## Installation
 
@@ -26,7 +26,7 @@ estimator: a function of one variable, `x`, which when invoked returns the
 kernel density estimate for `x`. The returned function can also be called with a
 vector supplied as an argument for `x`. In this case, the density is evaluated
 is for each element of the vector and the vector of density estimates
-is returned. 
+is returned.
 
 ### .regression(xs, ys, kernel, [bandwidth])
 
@@ -37,7 +37,7 @@ a function of one variable, `x`, which when invoked returns the
 estimate for `y`. The returned function can also be called with a
 vector supplied as an argument for `x`. In this case, predictions are generated
 for each element of the vector and the vector of predictions
-is returned. 
+is returned.
 
 ### .mutipleRegression(Xs, ys, kernel, [bandwidth])
 
@@ -45,7 +45,7 @@ Similar to .regression(), except that Xs should be a 2d array containing multipl
 
 ### Choice of Kernel function
 
-For the `kernel` parameter in above functions, you should supply a univariate function `K(x)` which satisfies K(x) >= 0, integrates to one, has zero mean and unit variance. 
+For the `kernel` parameter in above functions, you should supply a univariate function `K(x)` which satisfies K(x) >= 0, integrates to one, has zero mean and unit variance.
 See the functions in the exported `.fun` object for a list of already implemented kernel functions.
 
 ### .fun
@@ -68,3 +68,15 @@ Tricube kernel function. Equal to zero if |x| > 1 and otherwise equal to
 
 ### .silverman(x)
 For input vector x, calculate the optimal bandwidthe using Silverman's rule of thumb. This utility function can be used to calculate an appropriate bandwidth for the case in which a Gaussian kernel is used and one has reason to believe that the data points x_i are drawn from a normal distribution.
+
+
+## License
+
+MIT © [Philipp Burckhardt](http://www.philipp-burckhardt.com)
+
+[npm-url]: https://npmjs.org/package/kernel-smooth
+[npm-image]: https://badge.fury.io/js/kernel-smooth.svg
+[travis-url]: https://travis-ci.org/Planeshifter/kernel-smooth
+[travis-image]: https://travis-ci.org/Planeshifter/kernel-smooth.svg?branch=master
+[daviddm-url]: https://david-dm.org/Planeshifter/kernel-smooth.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/Planeshifter/kernel-smooth
