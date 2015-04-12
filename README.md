@@ -1,4 +1,7 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![Dependencies][dependencies-image]][dependencies-url]
 
 # kernelSmooth
 
@@ -76,7 +79,12 @@ MIT © [Philipp Burckhardt](http://www.philipp-burckhardt.com)
 
 [npm-url]: https://npmjs.org/package/kernel-smooth
 [npm-image]: https://badge.fury.io/js/kernel-smooth.svg
+
 [travis-url]: https://travis-ci.org/Planeshifter/kernel-smooth
 [travis-image]: https://travis-ci.org/Planeshifter/kernel-smooth.svg?branch=master
-[daviddm-url]: https://david-dm.org/Planeshifter/kernel-smooth.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/Planeshifter/kernel-smooth
+
+[coveralls-image]: https://img.shields.io/coveralls/Planeshifter/kernel-smooth/master.svg
+[coveralls-url]: https://coveralls.io/r/Planeshifter/kernel-smooth?branch=master
+
+[dependencies-url]: https://david-dm.org/Planeshifter/kernel-smooth.svg?theme=shields.io
+[dependencies-image]: https://david-dm.org/Planeshifter/kernel-smooth
