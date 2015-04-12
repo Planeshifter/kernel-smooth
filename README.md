@@ -86,5 +86,5 @@ MIT © [Philipp Burckhardt](http://www.philipp-burckhardt.com)
 [coveralls-image]: https://img.shields.io/coveralls/Planeshifter/kernel-smooth/master.svg
 [coveralls-url]: https://coveralls.io/r/Planeshifter/kernel-smooth?branch=master
 
-[dependencies-url]: https://david-dm.org/Planeshifter/kernel-smooth.svg?theme=shields.io
-[dependencies-image]: https://david-dm.org/Planeshifter/kernel-smooth
+[dependencies-image]: https://david-dm.org/Planeshifter/kernel-smooth.svg?theme=shields.io
+[dependencies-url]: https://david-dm.org/Planeshifter/kernel-smooth
