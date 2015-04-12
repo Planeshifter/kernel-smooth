@@ -4,7 +4,9 @@
   "description": "nonparametric kernel smoothing",
   "main": "lib/kernel.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "./node_modules/.bin/mocha",
+    "test-cov": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,10 @@
   },
   "devDependencies": {
     "chai": "^2.0.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "jshint": "^2.7.0",
+    "jshint-stylish": "^1.0.1",
     "mocha": "^2.1.0"
   }
 }

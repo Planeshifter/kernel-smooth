@@ -1,4 +1,6 @@
-var kernel = require("../lib/kernel.js");
+'use strict';
+
+var kernel = require('../lib/kernel.js' );
 
 var x = [-2,  0, 0,  1,  1,  2,  3,  4,  4,  4,  5,  5,  5,  5,  5,  6,  6,  7,  8, 10];
 var y = [-4.4938900, -0.8583945,  1.0272176,  1.5572244, 1.3661168,  4.7993054,  4.8316603,
@@ -6,6 +8,6 @@ var y = [-4.4938900, -0.8583945,  1.0272176,  1.5572244, 1.3661168,  4.7993054, 
   11.0412513, 10.9206553, 14.4753870, 18.2548619, 20.4272286];
 
 
-var f_hat = kernel.regression(x, y, kernel.fun.gaussian, 0.5);
+var f_hat = kernel.regression( x, y, kernel.fun.gaussian, 0.5 );
 
-console.log(f_hat(0));
+console.log( f_hat( 0 ) );
