@@ -1,6 +1,6 @@
-var chai = require("chai");
+var chai = require( 'chai' );
 var expect = chai.expect;
-var kernel = require("../lib/kernel.js");
+var kernel = require( './../lib/' );
 
 describe(".fun", function(){
   it("is an object of kernel functions", function(){
