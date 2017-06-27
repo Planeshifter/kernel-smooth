@@ -91,6 +91,6 @@ describe(".silverman()", function(){
   it("returns an optimal bandwith", function(){
     var x = [0,0,1,1,1,2,2];
     var h = kernel.silverman(x);
-    expect(h).to.be.above(0);
+    expect(h).to.be.closeTo(0.586, 0.01);
   });
 });
