@@ -27,7 +27,7 @@
   "dependencies": {
     "compute-stdev": "^1.0.0",
     "distributions-normal-pdf": "0.0.2",
-    "euclidean-distance": "^0.1.0",
+    "eucli": "^1.0.3",
     "validate.io-array": "^1.0.6",
     "validate.io-function": "^1.0.2"
   },
